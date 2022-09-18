@@ -47,3 +47,28 @@ header {
     display: flex;
     gap: 2em;
 }
+
+.user {
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+}
+
+
+.user-greeting {
+    display: flex;
+    gap: 1em;
+
+}
+
+.user-buttons {
+    display: flex;
+    gap: 2em;
+}
+
+.user-buttons > button {
+    width: 6rem;
+    height: 2rem;
+    border-radius: 20px;
+    border: none;
+}
