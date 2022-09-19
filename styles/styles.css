@@ -110,7 +110,26 @@ header {
 .menu-container {
     grid-area: 1 / 1 / -1 / 1;
     background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.25rem;
+    font-weight: bold;
+    gap: 3em;
+    padding: 1em;
 }
+
+.top-menu, ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    
+}
+
+ul {
+    list-style: none;
+}
+
+
 
 .main-container {
     grid-area: 2 / 2 / -1 / -1;
