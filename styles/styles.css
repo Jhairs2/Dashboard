@@ -118,15 +118,22 @@ header {
     padding: 1em;
 }
 
-.top-menu, ul {
+.top-menu {
     display: flex;
     flex-direction: column;
-    gap: 1.5em;
-    
+    gap: 1.75em;
 }
 
-ul {
-    list-style: none;
+.top-menu-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.bottom-menu-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 
 
