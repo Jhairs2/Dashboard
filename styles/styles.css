@@ -11,7 +11,9 @@
     --header-background-color: #f0f9ff;
     --nav-background-color: #67e8f9;
     --nav-font-color: white;
+    --nav-icon-color: invert(100%) sepia(4%) saturate(3392%) hue-rotate(225deg) brightness(105%) contrast(103%);
     --main-background-color: #bae6fd;
+
 }
 
 body {
@@ -119,17 +121,21 @@ header {
     background-color: var(--nav-background-color);
     display: flex;
     flex-direction: column;
-    
     font-size: 1.25rem;
     font-weight: bold;
     gap: 3em;
     padding: 1em;
 }
 
-.menu-container, .menu-container img {
+.menu-container {
     color: var(--nav-font-color);
-    
+
 }
+
+.menu-container img {
+    filter: var(--nav-icon-color);
+}
+
 
 .top-menu {
     display: flex;
@@ -141,7 +147,6 @@ header {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    fill: var(--nav-font-color);
 }
 
 .bottom-menu-container {
@@ -150,15 +155,16 @@ header {
     gap: 1em;
 }
 
-.top-menu>div,
+.top-menu div:nth-child(1),
 .top-menu-container>div,
 .bottom-menu-container>div {
     display: flex;
+    align-items: center;
     gap: 1em;
 }
 
 
-
+/* Main section */
 .main-container {
     background-color: var(--main-background-color);
     grid-area: 2 / 2 / -1 / -1;
@@ -166,7 +172,7 @@ header {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 3fr auto;
     padding: 1.5em;
-    gap: 1em; 
+    gap: 1em;
     font-size: 0.9rem;
 }
 
@@ -174,7 +180,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 1em;
-   
+
 }
 
 .projects {
