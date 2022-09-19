@@ -136,6 +136,13 @@ header {
     gap: 1em;
 }
 
+.top-menu > div, 
+.top-menu-container > div,
+.bottom-menu-container > div { 
+    display: flex;
+    gap: 1em;
+}
+
 
 
 .main-container {
