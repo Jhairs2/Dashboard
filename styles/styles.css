@@ -13,7 +13,11 @@ body {
     height: 100vh;
 }
 
+
+/* Header section */
 .page-container {
+    height: 100%;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: repeat(4, 1fr);
@@ -98,4 +102,16 @@ header {
 
 .notifications, .user-buttons {
    padding: 0 3em;
+}
+
+
+/* Nav section */
+
+.menu-container {
+    grid-area: 1 / 1 / -1 / 1;
+    background-color: antiquewhite;
+}
+
+.main-container {
+    grid-area: 2 / 2 / -1 / -1;
 }
