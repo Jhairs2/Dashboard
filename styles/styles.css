@@ -28,8 +28,8 @@ body {
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 0.75fr repeat(3, 1fr);
 }
 
 img {
@@ -173,6 +173,7 @@ header {
 .bottom-menu-container>div:hover {
     cursor: pointer;
     font-size: 1.5rem;
+    transition: ease 0.20s;
 }
 
 /* Main section */
@@ -183,7 +184,7 @@ header {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 3fr auto;
     padding: 1.5em;
-    gap: 1em;
+    gap: 1.5em;
     font-size: 0.9rem;
 }
 
@@ -222,6 +223,6 @@ header {
 .announcement-content,
 .trend-content {
     border: 2px solid black;
-    width: 250px;
+    width: 300px;
     height: 100%;
 }
