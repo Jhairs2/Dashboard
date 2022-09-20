@@ -21,6 +21,7 @@
     --main-card-background-color: #f0f9ff;
     --main-card-border-color: #0284c7;
     --box-shadow-color: hsl(0deg 0% 0% / 0.41);
+    --announcement-text-color: rgb(76, 76, 76);
 
 }
 
@@ -258,7 +259,21 @@ img {
     height: 100%;
 }
 
+.announcement-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    padding: 2.5em;
+    font-size: 0.75rem;
 
+}
+
+.announce-text {
+    color: var(--announcement-text-color);
+    padding-bottom: 1.5em;
+    border-bottom: 2px solid lightgrey;
+}
 
 .project-info {
     height: 100%;
@@ -277,7 +292,6 @@ img {
     height: auto;
     border-radius: 6px;
     box-shadow: 2px 2px 4px var(--box-shadow-color);
-    ;
 }
 
 .project-icons-container {
