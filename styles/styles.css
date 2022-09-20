@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 :root {
@@ -36,7 +37,7 @@ body {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 0.75fr repeat(3, 1fr);
+    grid-template-rows: 0.4fr repeat(3, 1fr);
 }
 
 img {
@@ -150,7 +151,6 @@ img {
     gap: 3em;
     padding: 1em;
     text-shadow: 2px 2px 4px var(--box-shadow-color);
-    ;
 }
 
 .menu-container img {
@@ -159,6 +159,7 @@ img {
 
 
 .top-menu {
+
     display: flex;
     flex-direction: column;
     gap: 1.75em;
@@ -230,7 +231,8 @@ img {
     padding: 1em;
     transition: all 0.2s ease-in-out;
 }
-.projects>div:hover{
+
+.projects>div:hover {
     transform: scale(1.01);
 }
 
@@ -274,11 +276,21 @@ img {
     width: 45%;
     height: auto;
     border-radius: 6px;
-    box-shadow: 2px 2px 4px var(--box-shadow-color);;
+    box-shadow: 2px 2px 4px var(--box-shadow-color);
+    ;
 }
 
-.project-icons {
+.project-icons-container {
     display: flex;
     justify-content: flex-end;
     gap: 1em;
+}
+
+.pro-icon {
+    transition: all 0.2s ease-in-out;
+}
+.pro-icon:hover {
+    transform: scale(1.2);
+    filter: var(--header-icon-hover-color);
+
 }
