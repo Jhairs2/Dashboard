@@ -23,6 +23,7 @@
 body {
     width: 100%;
     height: 100%;
+    
 }
 
 
@@ -129,6 +130,7 @@ img {
 
 .menu-container {
     grid-area: 1 / 1 / -1 / 1;
+    color: var(--nav-font-color);
     background-color: var(--nav-background-color);
     display: flex;
     flex-direction: column;
@@ -136,11 +138,7 @@ img {
     font-weight: bold;
     gap: 3em;
     padding: 1em;
-}
-
-.menu-container {
-    color: var(--nav-font-color);
-
+    text-shadow: 2px 2px 4px var(--box-shadow-color);;
 }
 
 .menu-container img {
