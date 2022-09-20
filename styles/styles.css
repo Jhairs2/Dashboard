@@ -167,14 +167,15 @@ header {
     display: flex;
     align-items: center;
     gap: 1em;
+    transition: all 0.2s ease-in-out;
 }
 
 .top-menu-container>div:hover,
-.bottom-menu-container>div:hover {
+.bottom-menu-container>div:hover, .menu-icon:hover {
     cursor: pointer;
-    font-size: 1.5rem;
-    transition: ease 0.20s;
+    transform: scale(1.05);
 }
+
 
 /* Main section */
 .main-container {
