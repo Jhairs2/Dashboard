@@ -228,6 +228,10 @@ img {
     flex-direction: column;
     gap: 1.5em;
     padding: 1em;
+    transition: all 0.2s ease-in-out;
+}
+.projects>div:hover{
+    transform: scale(1.01);
 }
 
 .side-content {
@@ -269,6 +273,8 @@ img {
     justify-content: center;
     width: 45%;
     height: auto;
+    border-radius: 6px;
+    box-shadow: 2px 2px 4px var(--box-shadow-color);;
 }
 
 .project-icons {
