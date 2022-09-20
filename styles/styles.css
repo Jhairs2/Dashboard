@@ -278,12 +278,11 @@ img {
 
 .trend-content {
     font-weight: bold;
-    padding: 2em;
+    padding: 1.5em;
 }
 
 .trend-user {
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 1em;
 }
